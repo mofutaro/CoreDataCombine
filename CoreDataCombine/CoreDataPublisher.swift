@@ -9,7 +9,7 @@ import Combine
 import CoreData
 import Foundation
 
-class <Entity>: NSObject, NSFetchedResultsControllerDelegate, Publisher where Entity: NSManagedObject {
+class CoreDataPublisher<Entity>: NSObject, NSFetchedResultsControllerDelegate, Publisher where Entity: NSManagedObject {
     typealias Output = [Entity]
     typealias Failure = Error
   
